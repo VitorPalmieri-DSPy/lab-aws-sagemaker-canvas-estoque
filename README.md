@@ -1,47 +1,32 @@
 # 📊 Previsão de Estoque Inteligente na AWS com [SageMaker Canvas](https://aws.amazon.com/pt/sagemaker/canvas/)
 
-Bem-vindo ao desafio de projeto "Previsão de Estoque Inteligente na AWS com SageMaker Canvas. Neste Lab DIO, você aprenderá a usar o SageMaker Canvas para criar previsões de estoque baseadas em Machine Learning (ML). Siga os passos abaixo para completar o desafio!
-
-## 📋 Pré-requisitos
-
-Antes de começar, certifique-se de ter uma conta na AWS. Se precisar de ajuda para criar sua conta, confira nosso repositório [AWS Cloud Quickstart](https://github.com/digitalinnovationone/aws-cloud-quickstart).
-
+Previsão de Estoque Inteligente na AWS com SageMaker Canvas. Neste Lab DIO, Eu fiz a previsão de estoque com preço variável com inclusão de novos produtos!
 
 ## 🎯 Objetivos Deste Desafio de Projeto (Lab)
 
 ![image](https://github.com/digitalinnovationone/lab-aws-sagemaker-canvas-estoque/assets/730492/72f5c21f-5562-491e-aa42-2885a3184650)
 
-- Dê um fork neste projeto e reescreva este `README.md`. Sinta-se à vontade para detalhar todo o processo de criação do seu Modelo de ML para uma "Previsão de Estoque Inteligente".
-- Para isso, siga o [passo a passo] descrito a seguir e evolua as suas habilidades em ML no-code com o Amazon SageMaker Canvas.
-- Ao concluir, envie a URL do seu repositório com a solução na plataforma da DIO.
-
-
 ## 🚀 Passo a Passo
 
 ### 1. Selecionar Dataset
 
--   Navegue até a pasta `datasets` deste repositório. Esta pasta contém os datasets que você poderá escolher para treinar e testar seu modelo de ML. Sinta-se à vontade para gerar/enriquecer seus próprios datasets, quanto mais você se engajar, mais relevante esse projeto será em seu portfólio.
--   Escolha o dataset que você usará para treinar seu modelo de previsão de estoque.
--   Faça o upload do dataset no SageMaker Canvas.
+-  "dataset-1000-com-preco-variavel-e-renovacao-estoque.csv"
 
 ### 2. Construir/Treinar
 
--   No SageMaker Canvas, importe o dataset que você selecionou.
--   Configure as variáveis de entrada e saída de acordo com os dados.
--   Inicie o treinamento do modelo. Isso pode levar algum tempo, dependendo do tamanho do dataset.
+-  Eu fiz primeiro uma building agrupando por preço, mas os dados não se mostraram fiés para predição. Então deixei com todos os valores, fazendo assim uma análise de produto a produto independente da variação de preço, apenas de acordo com sua quantidade e inclusão nos estoques para até 9 dias! 
 
 ### 3. Analisar
 
--   Após o treinamento, examine as métricas de performance do modelo.
--   Verifique as principais características que influenciam as previsões.
--   Faça ajustes no modelo se necessário e re-treine até obter um desempenho satisfatório.
+-   Métricas de performance do modelo:
+    - O preço variável tem um impacto sigificativo na previsão dos estoques, porém como não pude obetr fidelidade para a variação de preço eu segui com a predição de todos os valores por produto sendo assim:
+  __• wQL = 0.336 (Apresenta uma boa fidelidade de predições para os 3 cenários P10, P50 e P90);
+    • MAPE = 1.402 (Apresenta uma taxa de erro relativamente baixa, 1,4% relacionado a demanda real);
+    • WAPE = 0.540 (Os erros relacionados aos pesos dos alvos mais importantes estão balanceados, garantindo uma boa previsão pelo tempo);
+    • RMSE = 35.388 (Muito provavelmente devido a variação alta de preços a descrepância entre a predição e os valores reais se tornarão verdadeiros para cada faixa de valor variável);
+    • MASE = 0.818 (O modelo indica uma melhora significativa na previsão);__
 
 ### 4. Prever
 
--   Use o modelo treinado para fazer previsões de estoque.
--   Exporte os resultados e analise as previsões geradas.
--   Documente suas conclusões e qualquer insight obtido a partir das previsões.
-
-## 🤔 Dúvidas?
-
-Esperamos que esta experiência tenha sido enriquecedora e que você tenha aprendido mais sobre Machine Learning aplicado a problemas reais. Se tiver alguma dúvida, não hesite em abrir uma issue neste repositório ou entrar em contato com a equipe da DIO.
+-   Métricas por produto:
+  __• 
