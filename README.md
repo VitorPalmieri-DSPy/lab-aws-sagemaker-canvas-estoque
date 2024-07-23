@@ -58,7 +58,7 @@ Todos os produtos apresentaram valores flutuantes de estoque, a lista a seguir a
     - Item 04 = 90/15; (75)
     - Item 01 = 91/13. (78)
 
-_LEGENDA:_ menor = menos variação a cada dia, otimista = maior entrada e saída de estoque.
+_LEGENDA:_ menor = menor variação a cada dia, otimista = maior entrada e saída de estoque.
 
 _I:_ Item 
 
