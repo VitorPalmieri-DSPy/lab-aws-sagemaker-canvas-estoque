@@ -30,3 +30,36 @@ Previsão de Estoque Inteligente na AWS com SageMaker Canvas. Neste Lab DIO, Eu 
 
 -   Predição de estoque por produto:
     -  
+Todos os produtos apresentaram valores flutuantes de estoque, a lista a seguir apresenta os picos de entrada dos produtos previsto para os próximos 9 dias:
+
+    - Item 13 = Máxima de 95 em estoque com mínimo no 15 para o último dia seguinte; (80)
+    - Item 18 = Variações menores com máxima de 96 em estoque e mínimo de 22; (74)
+    - Item 06 = Variações menores com máxima de 96 em estoque e mínimo de 16; (80)
+    - Item 07 = Variações menores com máxima de 93 em estoque e mínima de 19; (74)
+    - Item 17 = menor 96/13; (83)
+    - Item 23 = menor 86/16; (70)
+    - Item 03 = menor 89/18; (71)
+    - Item 20 = menor 90/14; (76)
+    - Item 05 = menor 81/10; (71)
+    - Item 14 = 90/13; (77)
+    - Item 10 = 92/10; (82)
+    - Item 21 = 85/16; (69)
+    - Item 16 = 95/10; (85)
+    - Item 11 = 86/13; (73)
+    - Item 02 = 88/12; (76)
+    - Item 24 = otimista 90/13; (77)
+    - Item 09 = otimista 90/17; (73)
+    - Item 12 = otimista 87/10; (77)
+    - Item 25 = menor 86/10; (76)
+    - Item 08 = otimista 98/20; (78)
+    - Item 22 = otimista 98/21; (77)
+    - Item 15 = 95/09; (86)
+    - Item 19 = menor 95/20; (75)
+    - Item 04 = 90/15; (75)
+    - Item 01 = 91/13. (78)
+
+_LEGENDA:_ menor = menos variação a cada dia, otimista = maior entrada e saída de estoque.
+
+_I:_ Item 
+
+_CONCLUSÃO:_ desconsiderando os os produtos com menor variação de estoque, temos alguns otimistas que no modelo prevemos que entrem mais produtos pois as saídas também serão maiores (todos com valor da mediana na casa 70+, respectivamente [I24, I09, I12, I08 e I22]). E os com maior mediana de saída I13, I10, I16 com mediana até 85 e no topo o item com maior probabilidade de vendas I04 com mediana de 86.! 
