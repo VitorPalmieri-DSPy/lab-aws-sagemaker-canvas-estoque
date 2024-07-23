@@ -62,4 +62,4 @@ _LEGENDA:_ menor = menos variação a cada dia, otimista = maior entrada e saíd
 
 _I:_ Item 
 
-_CONCLUSÃO:_ desconsiderando os os produtos com menor variação de estoque, temos alguns otimistas que no modelo prevemos que entrem mais produtos pois as saídas também serão maiores (todos com valor da mediana na casa 70+, respectivamente [I24, I09, I12, I08 e I22]). E os com maior mediana de saída I13, I10, I16 com mediana até 85 e no topo o item com maior probabilidade de vendas I04 com mediana de 86.! 
+_CONCLUSÃO:_ desconsiderando os produtos com menor variação de estoque, temos alguns otimistas que no modelo prevemos que entrem mais produtos pois as saídas também serão maiores (todos com valor da mediana na casa 70+, respectivamente [I24, I09, I12, I08 e I22]). E os com maior mediana de saída I13, I10, I16 com mediana até 85 e no topo o item com maior probabilidade de vendas I04 com mediana de 86.! 
